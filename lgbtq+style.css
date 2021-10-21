@@ -1,0 +1,234 @@
+@keyframes bgcolor {
+  0% {
+    background-color: darkred
+  }
+
+  5%{
+    background-color: red
+  }
+
+  11%{
+    background-color: rgb(255, 128, 128)
+  }
+
+  16% {
+    background-color: rgb(255, 157, 121)
+  }
+  
+  22%{
+    background-color: rgb(255, 115, 0)
+  }
+
+  27% {
+    background-color: orangered
+  }
+
+  33% {
+    background-color: goldenrod
+  }
+
+  38%{
+    background-color: yellow
+  }
+
+  44% {
+    background-color: rgb(253, 255, 116)
+  }
+
+  49% {
+    background-color: rgb(141, 255, 141)
+  }
+
+  55%{
+    background-color: rgb(0, 255, 0)
+  }
+
+  60% {
+    background-color: darkgreen
+  }
+
+  66% {
+    background-color: darkblue
+  }
+
+  71%{
+    background-color: rgb(0, 0, 255)
+  }
+
+  77% {
+    background-color: rgb(148, 212, 255)
+  }
+
+  82% {
+    background-color: rgb(200, 142, 255)
+  }
+
+  88%{
+    background-color: rgb(149, 0, 255)
+  }
+
+  93% {
+    background-color: indigo
+  }
+
+  100% {
+    background-color: darkred
+  }
+}
+
+body {
+  animation: bgcolor 20s infinite;
+  font-family: monospace;
+}
+
+/*the above lines are used to change the colour of the background*/
+
+div{
+  background: rgba(245,245,245,0.8);
+  padding: 5px;
+  margin: 25px;
+}
+#collapse{
+  font-size: 25px;
+  color: black;
+}
+#flag{
+  width:150px;
+  height:100px;
+}
+ul{
+	list-style: none;
+  color: black;
+  font-size: 20px
+}
+
+ul li::before{
+	content: "\2022";
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+	color: rgb(59, 59, 59);
+}
+a{
+  color: black;
+  font-size: 20px;
+}
+#wormspine{
+  width: 100%;
+  height: 50%;
+}
+#worm{
+  text-align: center;
+  font-size: 40px;
+}
+p{
+  font-size: 20px;
+}
+#ig{
+  width: 5%;
+  height: 5%;
+}
+h1{
+  text-align: center;
+}
+#center{
+  text-align: center;
+  font-size: 18px;
+}
+input{
+  font-family: monospace;
+}
+#noing{
+  height: 100%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tumblr{
+  width: 5%;
+  height: 5%;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  /*display: inline-block;*/
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: rgba(245,245,245,0.75);
+  padding: 5px;
+  margin: 25px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor:
+
